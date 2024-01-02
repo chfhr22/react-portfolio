@@ -1,0 +1,194 @@
+#section06 {
+    width: 100%;
+    height: 100vh;
+
+    border-bottom: 1px solid var(--line-color);
+    color: var(--main-font-color);
+    position: relative;
+}
+.comment__wrap {
+    width: 100%;
+    height: 100%;
+}
+.comment__braket__wrap {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+.comment__braket__wrap .braket {
+    font-size: 2vw;
+}
+.comment__braket__wrap .comment__text {
+    font-size: 1vw;
+    padding: 0 40px;
+}
+.comment__conts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.left {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+.comment__img {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.comment__img img {
+  width: 100%;
+  height: 100%;
+
+}
+
+
+.right {
+    width: 50%;
+    height: 70%;
+    padding-right: 10%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.comment__cont__wrap {
+    .comment__content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .comment {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+// .comment__cont {
+//     margin-bottom: 20px;
+//     overflow: hidden;
+//     text-align: left;
+//     display: inline-block;
+// }
+.comment {
+    border: 2px solid var(--black);
+    color: var(--mainBg);
+    background-color: var(--main-font-color);
+    border-radius: 30px;
+    padding: 10px;
+    // width: 100%;
+}
+.comment__write__wrap {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(35%);
+    .comment__author {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        .comment__name {
+            .name__input {
+                height: 40px;
+                padding: 10px;
+            }
+        }
+        .comment__pass {
+            .pass__input {
+                height: 40px;
+                padding: 10px;
+            }
+        }
+    }
+
+    .comment__cont {
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        .cont__input {
+            width: 385px;
+            height: 40px;
+            padding: 10px;
+        }
+        .comment__btn {
+            padding: 8px;
+            border: 1px solid var(--main-font-color);
+            background-color: var(--mainBg);
+            color: var(--main-font-color);
+            margin-left: 15px;
+
+            &:hover {
+                background-color: var(--main-font-color);
+                color: var(--mainBg);
+            }
+        }
+    }
+}
+.comment__modal__wrap {
+    .modal {
+        display: flex;
+        gap: 10px;
+    }
+}
+// .comment__author {
+//     display: flex;
+// }
+// .comment__author .date {
+//     margin-left: 10px;
+// }
+// .send__comment {
+//     position: absolute;
+//     bottom: -5%;
+//     left: 40%;
+//     transform: translateX(-50%);
+//     display: flex;
+// }
+// .send__comment input {
+//     width: 300px;
+//     height: 30px;
+//     padding: 20px;
+//     font-size: 1rem;
+// }
+// .send__comment button {
+//     padding: 10px 20px;
+//     font-size: 1rem;
+//     border: 1px solid var(--line-color);
+//     border-radius: 10px;
+//     color: var(--main-font-color);
+//     background-color: var(--mainBg);
+// }
+// .send__comment button:hover {
+//     border: 1px solid var(--main-font-color);
+// }
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+  
+/* .comment__img img에 애니메이션 적용 */
+.comment__img img {
+animation: bounce 3s infinite;
+}
+@media (max-width: 1200px) {
+    .comment__braket__wrap .braket {
+        font-size: 2rem;
+    }
+    .comment__braket__wrap .comment__text {
+    font-size: 1rem;
+    }
+}

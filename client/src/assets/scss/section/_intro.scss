@@ -1,0 +1,120 @@
+#section01 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid var(--line-color);
+  }
+  .main__wrap {
+    display: flex;
+  }
+  .main__wrap .main__cont {
+    color: var(--main-font-color);
+    font-size: 12vw;
+  }
+  .main__wrap .main__cont .t1 {
+    margin-left: -70%;
+  }
+  .main__wrap .main__cont .t2 {
+    margin-right: -70%;
+  }
+  .icons .icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 7vw;
+  }
+  .icons .icon01 {
+    left: 10%;
+  }
+  .icons .icon02 {
+    left: 20%;
+  }
+  .icons .icon03 {
+    left: 30%;
+  }
+  .icons .icon04 {
+    left: 40%;
+  }
+  .icons .icon05 {
+    left: 50%;
+  }
+  .icons .icon06 {
+    left: 60%;
+  }
+  .icons .icon07 {
+    left: 70%;
+  }
+  .icons .icon08 {
+    left: 80%;
+  }
+  .icons .icon09 {
+    left: 90%;
+  }
+  .main__text__wrap {
+    display: flex;
+    color: var(--main-font-color);
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    align-items: center;
+  }
+  .main__text__wrap .braket {
+    font-size: 5rem;
+  }
+  .main__text__wrap .main__text {
+    padding: 0 30px;
+  }
+  .main__btn {
+    color: var(--main-font-color);
+    border: 2px solid var(--main-font-color);
+    padding: 10px 50px;
+    font-size: 1.4rem;
+    border-radius: 40px;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    backdrop-filter: blur(3px);
+  }
+  .main__btn img {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  @media (max-width: 1000px) {
+    .main__text__wrap {
+      left: 50%;
+      bottom: 20%;
+      transform: translateX(-50%);
+    }
+    .main__btn {
+      width: 50%;
+      right: 25%;
+    }
+  }
+  @media (max-width: 700px) {
+    .main__text__wrap .main__text {
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 530px) {
+    .main__text__wrap {
+      width: 300px;
+    }
+    .main__btn {
+      font-size: 1rem;
+    }
+    .main__btn img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+  @media (max-width: 360px) {
+    .main__text__wrap {
+      width: 220px;
+    }
+    .main__text__wrap .main__text {
+      font-size: 0.6rem;
+    }
+  }
